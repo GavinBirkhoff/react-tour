@@ -3,6 +3,10 @@ import { useLatest } from "../../../hooks";
 
 const FuncCom = () => {
   const [count, setCount] = useState(0);
+  const [count2, setCount2] = useState(()=>{
+    console.log('initial count value');
+    return 0
+  });
   const latestCountRef = useLatest(count);
   const handleClick = () => {
     // setCount 执行3次
@@ -49,8 +53,26 @@ const FuncCom = () => {
       console.log(latestCountRef.current);
       setCount(++i); // 0
       console.log(latestCountRef.current);
-      console.log(i); // 4
+      console.log(i,'i'); // 4
     }, 0);
+  };
+  const handleSyncClick3 = () => {
+    // setCount 执行3次
+    setCount2((count) => {
+      console.log(count, "inner"); // step1
+      return count + 1;
+    });
+    console.log(count2); // 0 step2
+    setCount2((count) => {
+      console.log(count, "inner"); // step5
+      return count + 1;
+    });
+    console.log(count2); // 0 step3
+    setCount2((count) => {
+      console.log(count, "inner"); // step6
+      return count + 1;
+    });
+    console.log(count2); // 0 step4
   };
   return (
     <div>
@@ -58,6 +80,7 @@ const FuncCom = () => {
       <button onClick={handleClick}>异步{count}</button>
       <button onClick={handleSyncClick}>同步{count}</button>
       <button onClick={handleSyncClick2}>同步out{count}</button>
+      <button onClick={handleSyncClick3}>同步2{count2}</button>
     </div>
   );
 };
