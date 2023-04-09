@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLatest } from "../../../hooks";
+import { useLatest } from "../../hooks";
 
 const FuncCom = () => {
   const [count, setCount] = useState(0);
