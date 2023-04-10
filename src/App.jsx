@@ -1,18 +1,24 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+// import './App.css'
 
+// setState 数据同步/异步
 import FuncCom from "./fixtures/state/FuncCom"
 import ClassCom from "./fixtures/state/ClassCom"
+// useTransition
+import Transition from "./fixtures/transition/Transition"
+import NoTransition from "@/fixtures/transition/NoTransition"
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <FuncCom></FuncCom>
-      <ClassCom></ClassCom>
+      {/* <FuncCom></FuncCom>
+      <ClassCom></ClassCom> */}
+      <Transition></Transition>
+      <NoTransition></NoTransition>
     </div>
   )
 }
