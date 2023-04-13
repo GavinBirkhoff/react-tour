@@ -15,9 +15,13 @@ function App() {
 
   return (
     <div className="App">
-      {/* <FuncCom></FuncCom>
-      <ClassCom></ClassCom> */}
+      <h3>FuncCom</h3>
+      <FuncCom></FuncCom>
+      <h3>ClassCom</h3>
+      <ClassCom></ClassCom>
+      <h3>Transition</h3>
       <Transition></Transition>
+      <h3>NoTransition</h3>
       <NoTransition></NoTransition>
     </div>
   )

@@ -9,6 +9,7 @@ export default function TabContainer() {
   const [tab, setTab] = useState('about');
 
   function selectTab(nextTab) {
+    // Marking a state update as a non-blocking transition
     startTransition(() => {
       setTab(nextTab);
     });
