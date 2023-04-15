@@ -9,6 +9,8 @@ import ClassCom from "./fixtures/state/ClassCom"
 // useTransition
 import Transition from "./fixtures/transition/Transition"
 import NoTransition from "@/fixtures/transition/NoTransition"
+// suspense
+import MySuspense from "./fixtures/suspense"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +25,8 @@ function App() {
       <Transition></Transition>
       <h3>NoTransition</h3>
       <NoTransition></NoTransition>
+      <h3>Suspense</h3>
+      <MySuspense />
     </div>
   )
 }
