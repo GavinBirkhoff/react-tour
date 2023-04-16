@@ -8,6 +8,7 @@ import FuncCom from "./fixtures/state/FuncCom"
 import ClassCom from "./fixtures/state/ClassCom"
 // useTransition
 import Transition from "./fixtures/transition/Transition"
+import Search from './fixtures/transition/Search'
 import NoTransition from "@/fixtures/transition/NoTransition"
 // suspense
 import MySuspense from "./fixtures/suspense"
@@ -23,6 +24,7 @@ function App() {
       <ClassCom></ClassCom>
       <h3>Transition</h3>
       <Transition></Transition>
+      <Search/>
       <h3>NoTransition</h3>
       <NoTransition></NoTransition>
       <h3>Suspense</h3>
