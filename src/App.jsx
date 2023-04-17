@@ -12,6 +12,8 @@ import Search from './fixtures/transition/Search'
 import NoTransition from "@/fixtures/transition/NoTransition"
 // suspense
 import MySuspense from "./fixtures/suspense"
+// useDeferred
+import MyDeferred from './fixtures/deferred'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,6 +31,8 @@ function App() {
       <NoTransition></NoTransition>
       <h3>Suspense</h3>
       <MySuspense />
+      <h3>deferred</h3>
+      <MyDeferred />
     </div>
   )
 }
