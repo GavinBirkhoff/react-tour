@@ -12,6 +12,7 @@ import Search from './fixtures/transition/Search'
 import NoTransition from "@/fixtures/transition/NoTransition"
 // suspense
 import MySuspense from "./fixtures/suspense"
+import ArtistApp from "./fixtures/suspense/ArtistApp/ArtistApp"
 // useDeferred
 import MyDeferred from './fixtures/deferred'
 
@@ -31,6 +32,7 @@ function App() {
       <NoTransition></NoTransition>
       <h3>Suspense</h3>
       <MySuspense />
+      <ArtistApp />
       <h3>deferred</h3>
       <MyDeferred />
     </div>
