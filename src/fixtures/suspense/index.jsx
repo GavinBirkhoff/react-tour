@@ -1,14 +1,19 @@
 import { Suspense, useState } from "react"
 import { fetchData } from './data.js';
 const Foo = ()=>{
+    console.log('Foo');
+    debugger
     // const posts = use(fetchData('/posts'));
-    let promise;
-    throw promise = new Promise((resolve)=>{
-        setTimeout(()=>{resolve()},3000)
-    }).then(result=>{
-        promise.status = 'fulfilled';
-        promise.value = result;
-    })
+    // let promise;
+    // throw promise = new Promise((resolve)=>{
+    //     setTimeout(()=>{resolve()},3000)
+    // }).then(result=>{
+    //     promise.status = 'fulfilled';
+    //     promise.value = result;
+    // })
+    const promise = Promise.resolve()
+    promise.status = 'fulfilled'
+    throw promise
     return <div>Foo</div>
 }
 
