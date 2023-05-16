@@ -1,5 +1,5 @@
 import MySuspense from './MySuspense'
-import ArtistApp from './ArtistApp'
+import ArtistApp from './ArtistApp/ArtistApp'
 const SuspenseView = () => {
   return (
     <>
