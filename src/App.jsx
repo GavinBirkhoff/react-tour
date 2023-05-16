@@ -15,7 +15,6 @@ import MySuspense from "./fixtures/suspense"
 import ArtistApp from "./fixtures/suspense/ArtistApp/ArtistApp"
 // useDeferred
 import MyDeferred from './fixtures/deferred'
-import { Log ,PasswordField} from './fixtures/id'
 import BaseLayout from './layout/BaseLayout'
 
 function App() {
@@ -38,10 +37,6 @@ function App() {
       <ArtistApp />
       <h3>deferred</h3>
       <MyDeferred />
-      <h3>useId</h3>
-      <Log></Log>
-      <PasswordField/>
-      <PasswordField/>
     </div>
   )
 }

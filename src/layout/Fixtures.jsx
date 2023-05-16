@@ -1,4 +1,5 @@
 import State from "../fixtures/state";
+import Id from "../fixtures/id";
 import useLocation from "../hooks/useLocation";
 
 const Fixtures = () => {
@@ -7,7 +8,9 @@ const Fixtures = () => {
     console.log(route);
     switch (route) {
       case "/state":
-        return <State></State>;
+        return <State />;
+      case "/id":
+        return <Id/>;
       default:
         return <p>404</p>;
     }
