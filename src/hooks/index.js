@@ -1,4 +1,5 @@
-import useLatest from './useLatest'
-import useUpdate from './useUpdate'
+import useLatest from "./useLatest";
+import useUpdate from "./useUpdate";
+import useHistory from "./useHistory";
 
-export { useLatest, useUpdate }
+export { useLatest, useUpdate, useHistory };
