@@ -1,6 +1,7 @@
+import useLocation from "../hooks/useLocation";
 import State from "../fixtures/state";
 import Id from "../fixtures/id";
-import useLocation from "../hooks/useLocation";
+import SuspenseView from "../fixtures/suspense";
 
 const Fixtures = () => {
   const { pathname } = useLocation();
@@ -11,6 +12,8 @@ const Fixtures = () => {
         return <State />;
       case "/id":
         return <Id/>;
+      case "/suspense":
+        return <SuspenseView/>;
       default:
         return <p>404</p>;
     }

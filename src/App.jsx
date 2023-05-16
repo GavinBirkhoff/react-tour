@@ -32,9 +32,6 @@ function App() {
       <Search/>
       <h3>NoTransition</h3>
       <NoTransition></NoTransition>
-      <h3>Suspense</h3>
-      <MySuspense />
-      <ArtistApp />
       <h3>deferred</h3>
       <MyDeferred />
     </div>
