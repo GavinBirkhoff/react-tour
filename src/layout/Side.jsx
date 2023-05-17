@@ -5,16 +5,18 @@ const menus = [
   { path: "/id", label: "id", name: "id" },
 ];
 const Side = () => {
-  const history = useHistory();
+  const { push } = useHistory();
   const handleClick = (item) => {
     const { path } = item;
-    history.pushState({}, null, path);
+    push({ id: 1 }, null, path);
   };
   return (
     <div>
       <ul>
         {menus.map((menu) => (
-          <li onClick={() => handleClick(menu)}>{menu.label}</li>
+          <li key={menu.name} onClick={() => handleClick(menu)}>
+            {menu.label}
+          </li>
         ))}
       </ul>
     </div>
